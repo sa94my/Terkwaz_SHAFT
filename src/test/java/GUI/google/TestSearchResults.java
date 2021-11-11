@@ -23,6 +23,5 @@ public class TestSearchResults {
         String resultContent = searchResultsPage.getNthResultText(searchResultIndex);
         Validations.assertThat().object(resultContent).equals(expectedText);
 
-       // DriverFactory.closeAllDrivers();
     }
 }
