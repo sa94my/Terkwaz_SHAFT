@@ -8,6 +8,11 @@
             <class name="GUI.heroku.TestFileUpload"></class>
         </classes>
     </test>
-    
+    <test thread-count="5" name="API">
+        <classes>
+            <class name="API.catFacts.getRandomCatFact"></class>
+
+        </classes>
+    </test>
 
 </suite>
