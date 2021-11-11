@@ -1,15 +1,10 @@
 package GUI.google;
 
-import GUI.TestBase;
 import PageClasses.google.SearchPage;
 import PageClasses.google.SearchResultsPage;
 import com.shaft.driver.DriverFactory;
-import com.shaft.tools.io.JSONFileManager;
 import com.shaft.validation.Validations;
 import org.openqa.selenium.WebDriver;
-import org.testng.annotations.BeforeClass;
-import org.testng.annotations.BeforeMethod;
-import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
 
 public class TestSearchResults  extends GoogleTestBase{

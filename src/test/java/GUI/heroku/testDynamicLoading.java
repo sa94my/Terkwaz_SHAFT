@@ -1,9 +1,7 @@
 package GUI.heroku;
 
-import GUI.TestBase;
 import PageClasses.heroku.DynamicLoadingExmaple2Page;
 import com.shaft.driver.DriverFactory;
-import com.shaft.validation.Assertions;
 import com.shaft.validation.Validations;
 import org.openqa.selenium.WebDriver;
 import org.testng.annotations.Test;

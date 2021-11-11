@@ -1,10 +1,7 @@
 package GUI.heroku;
 
-import GUI.TestBase;
 import PageClasses.heroku.FileUploadPage;
-import com.shaft.cli.FileActions;
 import com.shaft.driver.DriverFactory;
-import com.shaft.tools.io.ReportManager;
 import com.shaft.validation.Validations;
 import org.openqa.selenium.WebDriver;
 import org.testng.annotations.Test;
