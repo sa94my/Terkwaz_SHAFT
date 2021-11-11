@@ -1,5 +1,6 @@
 package GUI.heroku;
 
+import GUI.TestBase;
 import PageClasses.heroku.FileUploadPage;
 import com.shaft.cli.FileActions;
 import com.shaft.driver.DriverFactory;
@@ -8,7 +9,7 @@ import com.shaft.validation.Validations;
 import org.openqa.selenium.WebDriver;
 import org.testng.annotations.Test;
 
-public class TestFileUpload {
+public class TestFileUpload extends TestBase {
     WebDriver driver;
     String file ="src\\test\\resources\\Capture3.PNG";
     String fileName = "Capture3.PNG";
@@ -20,6 +21,7 @@ public class TestFileUpload {
         fileUploadPage.FileUpload(file);
         String actualText = fileUploadPage.getUploadedFileName();
         Validations.verifyThat().object(actualText).equals(fileName);
+        driver.quit();
     }
 
 }

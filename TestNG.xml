@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Terkwaz_SHAFT ">
+    <test thread-count="5" name="GUI">
+        <classes>
+            <class name="GUI.google.TestSearchResults"></class>
+            <class name="GUI.heroku.testDynamicLoading"></class>
+            <class name="GUI.heroku.TestFileUpload"></class>
+        </classes>
+    </test>
+    
+
+</suite>
