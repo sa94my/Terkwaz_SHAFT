@@ -1,0 +1,10 @@
+  {
+    "DynamicLoading": {
+      "expectedText": "Hello World!"
+
+    },
+    "FileUpload": {
+      "fileName": "Capture3.PNG",
+	  "fullName": "src/test/resources/Capture3.PNG"
+    }
+  }

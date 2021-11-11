@@ -9,19 +9,19 @@ import com.shaft.validation.Validations;
 import org.openqa.selenium.WebDriver;
 import org.testng.annotations.Test;
 
-public class TestFileUpload extends TestBase {
+public class TestFileUpload extends HerokuTestBase {
     WebDriver driver;
-    String file ="src\\test\\resources\\Capture3.PNG";
-    String fileName = "Capture3.PNG";
+
+
     @Test
     public void verifySuccessfulUpload(){
         driver= DriverFactory.getDriver();
         FileUploadPage fileUploadPage = new FileUploadPage(driver);
         fileUploadPage.navigateToPage();
-        fileUploadPage.FileUpload(file);
+        fileUploadPage.FileUpload(jsonImporter.getTestData("FileUpload.fullName"));
         String actualText = fileUploadPage.getUploadedFileName();
-        Validations.verifyThat().object(actualText).equals(fileName);
-        driver.quit();
+        Validations.verifyThat().object(actualText).equals(jsonImporter.getTestData("FileUpload.fileName"));
+
     }
 
 }
