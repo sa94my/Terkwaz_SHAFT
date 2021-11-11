@@ -2,6 +2,9 @@
 .idea
 #my ignores
 target/
+allure-results
+extent-reports
+generate_allure_report.bat
 
 
 # AWS User-specific
