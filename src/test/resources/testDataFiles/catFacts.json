@@ -1,0 +1,7 @@
+
+{
+  "baseUrl": "https://cat-fact.herokuapp.com",
+  "randomFact": {
+    "endPoint": "/facts/random"
+  }
+}
